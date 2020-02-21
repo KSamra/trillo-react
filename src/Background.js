@@ -3,10 +3,10 @@ import React from 'react';
 
 const StyledBackground = styled.div`
   color: ${({theme}) => theme.color_primary};
-  font-size: 20rem;
+  font-size: 2rem;
   height: 10rem;
   background-color: cyan;
-  font-weight: bold;
+  font-weight: 300;
 
   
 
