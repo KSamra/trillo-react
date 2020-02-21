@@ -1,7 +1,14 @@
 import React from 'react';
-import Background from './components/Background';
 import {ThemeProvider} from 'styled-components';
 
+// Components
+import Background from './components/Background';
+import Container from './components/Container';
+
+// import Background2 from './components/Background2';
+// import Container2 from './components/Container2';
+
+// base theme
 const theme = {
   color_primary: '#eb2f64',
   color_primary_light: '#FF3366',
@@ -22,7 +29,12 @@ const theme = {
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Background/>
+      <Background>
+        <Container>
+          Hello World
+        </Container>
+
+      </Background>
     </ThemeProvider>
   );
 }
