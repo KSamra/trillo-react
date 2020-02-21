@@ -6,7 +6,7 @@ const Container = styled.div`
   box-shadow: ${props => props.theme.shadow_dark};
   min-height: 50rem;
   margin: 8rem auto;
-  justify-content: center;
+  
 `;
 
 export default Container;
