@@ -4,9 +4,7 @@ import {ThemeProvider} from 'styled-components';
 // Components
 import Background from './components/Background';
 import Container from './components/Container';
-
-// import Background2 from './components/Background2';
-// import Container2 from './components/Container2';
+import Header from './components/Header';
 
 // base theme
 const theme = {
@@ -31,7 +29,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Background>
         <Container>
-          Hello World
+          <Header>Hello</Header>
         </Container>
 
       </Background>
