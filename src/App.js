@@ -1,5 +1,5 @@
 import React from 'react';
-import Background from './Background';
+import Background from './components/Background';
 import {ThemeProvider} from 'styled-components';
 
 const theme = {
