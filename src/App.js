@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Background from './Background';
+import {ThemeProvider} from 'styled-components';
 
-function App() {
+const theme = {
+  color_primary: '#eb2f64',
+  color_primary_light: '#FF3366',
+  color_primary_dark: '#BA265D',
+
+  color_grey_light_1: '#faf9f9',
+  color_grey_light_2: '#f4f2f2',
+  color_grey_light_3: '#f0eeee',
+  color_grey_light_4: '#ccc',
+
+ color_grey_dark_1: '#333',
+ color_grey_dark_2: '#777',
+ color_grey_dark_3: '#999',
+ 
+ shadow_dark: '0 2rem 6rem rgba(0,0,0,.3)'
+};
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Background/>
+    </ThemeProvider>
   );
 }
 
