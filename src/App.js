@@ -6,6 +6,7 @@ import Background from './components/Background';
 import Container from './components/Container';
 import Header from './components/Header';
 import Logo from './components/Logo';
+import Search from './components/Search';
 
 // base theme
 const theme = {
@@ -32,6 +33,7 @@ const App = () => {
         <Container>
           <Header>
             <Logo/>
+            <Search/>
           </Header>
         </Container>
 
