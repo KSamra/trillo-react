@@ -7,6 +7,8 @@ import Container from './components/Container';
 import Header from './components/Header';
 import Logo from './components/Logo';
 import Search from './components/Search';
+import Nav from './components/UserNav/Nav';
+
 
 // base theme
 const theme = {
@@ -34,6 +36,7 @@ const App = () => {
           <Header>
             <Logo/>
             <Search/>
+            <Nav/>
           </Header>
         </Container>
 
