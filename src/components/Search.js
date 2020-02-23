@@ -9,7 +9,7 @@ const StyledForm = styled.form`
   align-items:center;
 
   /* Temporary */
-  background-color: cyan;
+
   flex: 0 0 40%;
 
 `;

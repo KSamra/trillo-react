@@ -10,10 +10,8 @@ const Background = styled.div`
   background-repeat: no-repeat;
   /* text color for all children */
   color: ${props => props.theme.color_grey_dark_2};
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-
-  
 `;
 
 

@@ -9,6 +9,10 @@ import Logo from './components/Logo';
 import Search from './components/Search';
 import Nav from './components/UserNav/Nav';
 
+import Content from './components/Content';
+import Sidebar from './components/Navigation/Sidebar';
+import HotelView from './components/HotelView/HotelView';
+
 
 // base theme
 const theme = {
@@ -32,12 +36,18 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Background>
+        
         <Container>
           <Header>
             <Logo/>
             <Search/>
             <Nav/>
           </Header>
+
+          <Content>
+            <Sidebar>Navigation</Sidebar>
+            <HotelView>Hotels</HotelView>
+          </Content>
         </Container>
 
       </Background>
