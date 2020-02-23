@@ -11,6 +11,7 @@ const Background = styled.div`
   /* text color for all children */
   color: ${props => props.theme.color_grey_dark_2};
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
 `;
 
