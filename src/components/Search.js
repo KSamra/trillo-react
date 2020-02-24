@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import React from 'react';
 
-import magnifying_glass from '../img/SVG/magnifying-glass.svg';
+import { ReactComponent as magnifying_glass } from '../img/SVG/magnifying-glass.svg';
 
 const StyledForm = styled.form`
   display: flex;
@@ -51,12 +51,10 @@ const StyledButton = styled.button`
   }
 `;
 
-const StyledSVG = styled.img.attrs((props) => ({
-  src: props.image
-}))`
+const StyledSVG = styled.svg`
   height: 2rem;
   width: 2rem;
-  fill: color-grey-dark-3;
+  fill: ${props => props.theme.color_grey_dark_3};
 `;
 
 
@@ -66,7 +64,7 @@ const Search = () => {
     <StyledForm>
       <StyledInput type="text" placeholder="Search for Hotels"/>
       <StyledButton>
-        <StyledSVG image={magnifying_glass}/>
+        <StyledSVG as={magnifying_glass}/>
       </StyledButton>
     </StyledForm>
   );
