@@ -6,6 +6,9 @@ import userPhoto from '../../img/user.jpg';
 import bookmark from '../../img/SVG/bookmark.svg';
 import chat from '../../img/SVG/chat.svg';
 
+import { ReactComponent as BookmarkIcon} from '../../img/SVG/bookmark.svg';
+import { ReactComponent as ChatIcon } from '../../img/SVG/chat.svg';
+
 // import bookmark from '../../logo.svg';
 // import chat from '../../logo.svg';
 
@@ -53,13 +56,19 @@ const StyledNotification = styled.span`
 
 `;
 
-const StyledIcon = styled.img.attrs(props=>({
-  src: props.image
-}))`
+// const StyledIcon = styled.img.attrs(props=>({
+//   src: props.image
+// }))`
+//   height: 2.25rem;
+//   width: 2.25rem;
+//   fill: ${props => props.theme.color_grey_dark_2};
+
+// `;
+
+const StyledIcon = styled.svg`
   height: 2.25rem;
   width: 2.25rem;
   fill: ${props => props.theme.color_grey_dark_2};
-
 `;
 
 const StyledUser = styled.div`
@@ -81,12 +90,12 @@ const Nav = () => {
     <StyledNav>
 
       <StyledIconBox>
-        <StyledIcon image={bookmark}/>
+        <StyledIcon as={BookmarkIcon}/>
         <StyledNotification>7</StyledNotification>
       </StyledIconBox>
 
       <StyledIconBox>
-        <StyledIcon image={chat}/>
+        <StyledIcon as={ChatIcon}/>
         <StyledNotification>13</StyledNotification>
       </StyledIconBox>
 
