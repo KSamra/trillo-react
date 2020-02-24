@@ -56,7 +56,6 @@ const StyledSVG = styled.img.attrs((props) => ({
 }))`
   height: 2rem;
   width: 2rem;
-  background-color: palevioletred;
   fill: color-grey-dark-3;
 `;
 

@@ -7,6 +7,7 @@ const Logo = styled.img.attrs({
 })`
   height: 3.25rem;
   margin-right: 3rem;
+  padding-left: 1rem;
 
 `;
 
