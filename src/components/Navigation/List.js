@@ -3,14 +3,18 @@ import React from 'react';
 
 
 
-const styledList = styled.ul`
+const StyledList = styled.ul`
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem;
 `;
 
-const List = (props) => {
+const List = ({children}) => {
   return (
-    <styledList> </styledList>
+    <StyledList>
+      {children}
+    </StyledList>
   );
 }
+
+export default List;

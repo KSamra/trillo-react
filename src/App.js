@@ -45,7 +45,7 @@ const App = () => {
           </Header>
 
           <Content>
-            <Sidebar>Navigation</Sidebar>
+            <Sidebar></Sidebar>
             <HotelView>Hotels</HotelView>
           </Content>
         </Container>

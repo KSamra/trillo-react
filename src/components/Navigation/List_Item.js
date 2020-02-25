@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import React from 'react';
 
-const styledListItem = styled.li`
+const StyledListItem = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
 
 `;
 
-const styledLink = styled.a`
+const StyledLink = styled.a`
   &:link,
   &:visited {
 
@@ -28,7 +28,7 @@ const styledLink = styled.a`
 
 `;
 
-const styledIcon = styled.svg`
+const StyledIcon = styled.svg`
   width: 1.75rem;
   height: 1.75rem;
   margin-right: 2rem;
@@ -38,13 +38,15 @@ const styledIcon = styled.svg`
 
 
 
-const ListItem = ({label}) => {
+const ListItem = ({label, image}) => {
+  console.log(`Label received: ${label}`)
   return(
-    <styledListItem>
-      <styledLink>
+    <StyledListItem>
+      <StyledLink>
+        <StyledIcon as={image}></StyledIcon>
         {label}
-      </styledLink>
-    </styledListItem>
+      </StyledLink>
+    </StyledListItem>
   );
 }
 
