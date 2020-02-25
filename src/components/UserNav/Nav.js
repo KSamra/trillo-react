@@ -7,9 +7,6 @@ import userPhoto from '../../img/user.jpg';
 import { ReactComponent as BookmarkIcon} from '../../img/SVG/bookmark.svg';
 import { ReactComponent as ChatIcon } from '../../img/SVG/chat.svg';
 
-// import bookmark from '../../logo.svg';
-// import chat from '../../logo.svg';
-
 
 const StyledNav = styled.nav`  
   display: flex;
