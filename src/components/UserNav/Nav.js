@@ -3,8 +3,6 @@ import React from 'react';
 
 import userPhoto from '../../img/user.jpg';
 
-import bookmark from '../../img/SVG/bookmark.svg';
-import chat from '../../img/SVG/chat.svg';
 
 import { ReactComponent as BookmarkIcon} from '../../img/SVG/bookmark.svg';
 import { ReactComponent as ChatIcon } from '../../img/SVG/chat.svg';
